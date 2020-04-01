@@ -1,0 +1,10 @@
+package hu.qgears.viatra.bug.base1
+
+class Base1 {
+
+	int b1Prop	
+}
+
+class OtherClass{
+	String ref
+}

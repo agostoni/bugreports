@@ -1,0 +1,39 @@
+package hu.qgears.viatra.bug.patterns
+ 
+import "hu.qgears.viatra.bug.base1"
+import "http://www.eclipse.org/emf/2002/Ecore"
+
+
+/*
+ * I'm not sure this is a bug, but worked with earlier (1.6.2) versions
+ * 
+ * Multiple errors on 'test'
+ * 
+- Type not defined for variable test, inferred type http://www.eclipse.org/emf/2002/Ecore::EObject
+   is used instead.
+- Variable type cannot be calculated unambiguously, the types
+   [hu.qgears.viatra.bug.base1::OtherClass, hu.qgears.viatra.bug.base1::Base1]
+   have no _unique_ common supertype. The list of possible supertypes
+   found are [EObject], specify one as the intended supertype.
+ */
+pattern bug1_(test ){
+	find matchingBase1(test);
+} or {
+	find matchingOther(test);
+}
+/* 
+ * This works, but type EObject must be explicitly specified.
+ */
+pattern bug1Workaround(test : EObject){
+	find matchingBase1(test);
+} or {
+	find matchingOther(test);
+}
+
+
+private pattern matchingOther(o : OtherClass){
+	OtherClass.ref(o,"test");
+}
+private pattern matchingBase1(b : Base1){
+	Base1.b1Prop(b,1);
+}
