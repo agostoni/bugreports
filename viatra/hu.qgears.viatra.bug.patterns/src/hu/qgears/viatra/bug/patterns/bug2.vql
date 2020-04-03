@@ -3,10 +3,17 @@ package hu.qgears.viatra.bug.patterns
 import "hu.qgears.viatra.bug.level2"
 import "http://www.eclipse.org/emf/2002/Ecore"
 
+/*
+ * ERROR : l2MidProp cannot be resolved
+ */
 pattern bugtwo(param : Level2){
 	Level2.l2MidProp(param,2);
 }
 
-pattern bugtwoOther(param : Level2){
+/*
+ * ERROR : Variable types [hu.qgears.viatra.bug.level2::Level2Mid] do not
+   conform to declared type hu.qgears.viatra.bug.level2::Level2
+ */
+pattern bugtwoOtherForm(param : Level2){
 	Level2Mid.l2MidProp(param,2);
 }
