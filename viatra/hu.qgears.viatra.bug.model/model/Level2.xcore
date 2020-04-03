@@ -1,0 +1,11 @@
+package hu.qgears.viatra.bug.level2
+
+import hu.qgears.viatra.bug.level3.Level3
+import hu.qgears.viatra.bug.level1.Level1End
+
+class Level2 extends Level3 {
+	int l2Prop
+}
+class Level2Mid extends Level1End {
+	int l2MidProp
+} 

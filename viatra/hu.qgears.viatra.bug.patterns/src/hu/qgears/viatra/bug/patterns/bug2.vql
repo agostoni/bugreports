@@ -1,0 +1,12 @@
+package hu.qgears.viatra.bug.patterns
+ 
+import "hu.qgears.viatra.bug.level2"
+import "http://www.eclipse.org/emf/2002/Ecore"
+
+pattern bugtwo(param : Level2){
+	Level2.l2MidProp(param,2);
+}
+
+pattern bugtwoOther(param : Level2){
+	Level2Mid.l2MidProp(param,2);
+}

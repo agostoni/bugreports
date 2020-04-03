@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated Level3 -->
+      <package
+            uri="hu.qgears.viatra.bug.level3"
+            class="hu.qgears.viatra.bug.level3.Level3Package"
+            genModel="model/Level3.xcore"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated Level1 -->
+      <package
+            uri="hu.qgears.viatra.bug.level1"
+            class="hu.qgears.viatra.bug.level1.Level1Package"
+            genModel="model/Level1.xcore"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated Base1 -->
+      <package
+            uri="hu.qgears.viatra.bug.base1"
+            class="hu.qgears.viatra.bug.base1.Base1Package"
+            genModel="model/Base1.xcore"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated Level2 -->
+      <package
+            uri="hu.qgears.viatra.bug.level2"
+            class="hu.qgears.viatra.bug.level2.Level2Package"
+            genModel="model/Level2.xcore"/>
+   </extension>
+
+</plugin>

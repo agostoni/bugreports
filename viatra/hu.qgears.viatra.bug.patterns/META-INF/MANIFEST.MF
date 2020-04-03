@@ -6,17 +6,16 @@ Bundle-Version: 0.0.1.qualifier
 Bundle-ClassPath: .
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
-Export-Package: hu.qgears.viatra.bug.base1,
- hu.qgears.viatra.bug.base1.impl,
- hu.qgears.viatra.bug.base1.util,
- hu.qgears.viatra.bug.patterns
+Export-Package: hu.qgears.viatra.bug.patterns
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.emf.ecore;visibility:=reexport,
  org.eclipse.viatra.query.runtime,
  org.eclipse.viatra.query.runtime.rete,
  org.eclipse.viatra.query.runtime.localsearch,
  org.eclipse.xtext.xbase.lib,
- org.eclipse.emf.ecore.xcore.lib
+ org.eclipse.emf.ecore.xcore.lib,
+ hu.qgears.viatra.bug.patterns;visibility:=reexport,
+ hu.qgears.viatra.bug.model;bundle-version="0.1.0"
 Import-Package: org.apache.log4j
 Automatic-Module-Name: hu.qgears.viatra.bug.patterns
 Bundle-ActivationPolicy: lazy

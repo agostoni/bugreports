@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?><plugin>
-  <extension id="hu.qgears.viatra.bug.patterns.Bug1" point="org.eclipse.viatra.query.runtime.queryspecification">
-    <group group="org.eclipse.viatra.query.runtime.extensibility.SingletonExtensionFactory:hu.qgears.viatra.bug.patterns.Bug1" id="hu.qgears.viatra.bug.patterns.Bug1">
-      <query-specification fqn="hu.qgears.viatra.bug.patterns.bug1_"/>
-      <query-specification fqn="hu.qgears.viatra.bug.patterns.bug1Workaround"/>
-    </group>
-  </extension>
   <extension point="org.eclipse.emf.ecore.generated_package">
     <!-- @generated Base1 -->
     <package class="hu.qgears.viatra.bug.base1.Base1Package" genModel="model/Base1.xcore" uri="hu.qgears.viatra.bug.base1"/>
+  </extension>
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <!-- @generated Level1 -->
+    <package class="hu.qgears.viatra.bug.level1.Level1Package" genModel="model/test/Level1.xcore" uri="hu.qgears.viatra.bug.level1"/>
+  </extension>
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <!-- @generated Level2 -->
+    <package class="hu.qgears.viatra.bug.level2.Level2Package" genModel="model/Level2.xcore" uri="hu.qgears.viatra.bug.level2"/>
+  </extension>
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <!-- @generated Level3 -->
+    <package class="hu.qgears.viatra.bug.level3.Level3Package" genModel="model/test/Level3.xcore" uri="hu.qgears.viatra.bug.level3"/>
   </extension>
 </plugin>
